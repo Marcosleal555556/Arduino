@@ -1,0 +1,34 @@
+Marcos Antônio
+
+11 de novembro de 2023
+
+Memória RAM nos Arduinos UNO e Mega:
+Arduino UNO: Possui 2 KB de memória RAM.
+Arduino Mega: Tem 8 KB de memória RAM.
+
+Impactos no desempenho do Webserver devido à disponibilidade de RAM:
+A quantidade limitada de memória RAM nos Arduinos pode restringir a quantidade de dados que o Webserver pode manipular simultaneamente. Isso pode afetar a capacidade de resposta e a complexidade das solicitações que o servidor pode lidar.
+
+Velocidade de Processamento e Relação com o Clock:
+Os Arduinos têm uma medida de instruções por segundo (IPS) em torno de algumas dezenas de milhares a alguns milhões, dependendo do modelo e do clock.
+A velocidade de processamento é crucial para lidar com solicitações de um Webserver, pois determina a rapidez com que o Arduino pode processar e responder às solicitações recebidas.
+
+Relação entre velocidade de processamento e frequência do clock nos Arduinos:
+A frequência do clock determina a rapidez com que o processador executa as operações.
+A variação na frequência do clock influencia diretamente a velocidade de processamento: quanto mais alta a frequência, mais rápido o processamento.
+Isso impacta a capacidade de resposta do Webserver, já que uma frequência mais alta permite lidar com mais solicitações simultâneas de forma mais ágil.
+
+Capacidade máxima de armazenamento do cartão SD compatível com o Arduino:
+A capacidade máxima de um cartão SD compatível com Arduino varia, mas geralmente pode chegar a vários gigabytes (até 32 GB ou mais, dependendo do modelo e da versão do Arduino).
+
+Impacto do uso do cartão SD na disponibilidade de memória para operações do Webserver:
+Utilizar um cartão SD pode liberar memória RAM no Arduino, já que as páginas web são armazenadas no cartão, aliviando a carga na memória interna do dispositivo.
+
+Eficiência e Limitações do Armazenamento em SD:
+Benefícios: Armazenar páginas web no cartão SD permite maior capacidade de armazenamento em comparação com a memória flash interna do Arduino. Isso possibilita armazenar mais dados e páginas complexas.
+Limitações: O acesso aos arquivos no cartão SD pode ser mais lento em comparação com a memória flash interna. A velocidade de leitura e gravação do cartão SD pode afetar o desempenho do Webserver, especialmente em termos de tempo de resposta.
+
+Relatório e Discussão:
+O Arduino possui memória RAM limitada, afetando a capacidade de processamento e armazenamento de dados para servir páginas web.
+A velocidade de processamento e o clock do Arduino influenciam diretamente na capacidade de resposta do Webserver.
+O armazenamento em cartão SD oferece mais espaço para dados, porém pode ser mais lento que a memória flash interna.
